@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Enfermedades Respiratorias</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fffaf6;
+            color: #333;
+        }
+        section {
+            display: none;
+            padding: 60px 40px;
+            min-height: 100vh;
+            text-align: center;
+        }
+        section:target {
+            display: block;
+        }
+        nav {
+            margin-top: 40px;
+        }
+        nav a {
+            display: inline-block;
+            background-color: #aed9e0;
+            color: #333;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 0 10px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #d6f5f5;
+            color: #000;
+        }
+        h1, h2 {
+            margin-bottom: 20px;
+        }
+        img, iframe {
+            max-width: 90%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            max-width: 600px;
+            margin: auto;
+        }
+        ul li::before {
+            content: "🫁 ";
+        }
+
+        /* Colores pastel por slide */
+        #slider1 { background-color: #d0f4de; }
+        #slider2 { background-color: #fef6e4; }
+        #slider3 { background-color: #e4c1f9; }
+        #slider4 { background-color: #fde2e4; }
+        #slider5 { background-color: #cce3de; }
+
+        /* Mostrar la primera por defecto */
+        body:not(:target) #slider1 {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Slide 1: Portada -->
+<section id="slider1">
+    <h1>Enfermedades Respiratorias</h1>
+    <p>Una presentación web usando solo HTML y CSS</p>
+    <img src="IMAGEN1.png" alt="Sistema respiratorio">
+    <nav>
+        <a href="#slider2">Siguiente</a>
+    </nav>
+</section>
+
+<!-- Slide 2: ¿Qué aprenderás? -->
+<section id="slider2">
+    <h2>¿Qué aprenderás?</h2>
+    <ul>
+        <li>¿Qué son las enfermedades respiratorias?</li>
+        <li>Ejemplos comunes y sus causas</li>
+        <li>Medidas de prevención</li>
+        <li>Importancia del diagnóstico temprano</li>
+    </ul>
+    <nav>
+        <a href="#slider1">Anterior</a>
+        <a href="#slider3">Siguiente</a>
+    </nav>
+</section>
+
+<!-- Slide 3: Enfermedades comunes -->
+<section id="slider3">
+    <h2>Tipos de enfermedades respiratorias</h2>
+    <ul>
+        <li>Asma</li>
+        <li>Bronquitis</li>
+        <li>Neumonía</li>
+        <li>EPOC</li>
+        <li>COVID-19</li>
+    </ul>
+    <img src="IMAGEN 2.png" alt="Pulmones ilustración">
+    <nav>
+        <a href="#slider2">Anterior</a>
+        <a href="#slider4">Siguiente</a>
+    </nav>
+</section>
+
+<!-- Slide 4: Video -->
+<section id="slider4">
+    <h2>Video: Cuida tus pulmones</h2>
+    <iframe width="560" height="315"  src="https://www.youtube.com/embed/EibOQUldV2k" title="Cómo cuidar tus pulmones" frameborder="0" allowfullscreen></iframe>
+    <nav>
+        <a href="#slider3">Anterior</a>
+        <a href="#slider5">Siguiente</a>
+    </nav>
+</section>
+
+<!-- Slide 5: Cierre -->
+<section id="slider5">
+    <h2>¡Gracias por tu atención!</h2>
+    <p>Para más información sobre enfermedades respiratorias, visita:
+        <a href="https://www.who.int/es/health-topics/respiratory-diseases" target="_blank">OMS - Enfermedades respiratorias</a>
+    </p>
+    <nav>
+        <a href="#slider4">Anterior</a>
+        <a href="#slider1">Volver al inicio</a>
+    </nav>
+</section>
+
+</body>
+</html>
